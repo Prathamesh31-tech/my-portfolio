@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import { FiMenu, FiX } from "react-icons/fi"; //
 
 export default function PortfolioWebsite() {
   const [selectedProject, setSelectedProject] = useState(null);
+    const [menuOpen, setMenuOpen] = useState(false); 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [15, -15]);
   const rotateY = useTransform(x, [-100, 100], [-15, 15]);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleMouseMove = (event) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -14,6 +17,12 @@ export default function PortfolioWebsite() {
     const offsetY = event.clientY - rect.top - rect.height / 2;
     x.set(offsetX);
     y.set(offsetY);
+  };
+
+    const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false); // <-- close menu on click
   };
 
   const handleMouseLeave = () => {
@@ -30,10 +39,7 @@ export default function PortfolioWebsite() {
     { id: "resume", label: "Resume" }
   ];
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -78,13 +84,20 @@ export default function PortfolioWebsite() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-slate-900 to-indigo-900 min-h-screen text-white overflow-x-hidden">
+      <div className="bg-gradient-to-br from-gray-900 via-slate-900 to-indigo-900 min-h-screen text-white overflow-x-hidden">
       {/* NAVBAR */}
       <motion.nav initial={{y:-60,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.8}} className="fixed top-0 left-0 w-full bg-black/20 backdrop-blur-lg p-4 flex justify-between items-center z-50 shadow-lg">
         <motion.h1 whileHover={{scale:1.05}} className="text-xl font-bold tracking-wide">Prathamesh Portfolio</motion.h1>
-        <ul className="flex gap-6 text-sm">
+        
+        {/* Hamburger / Toggle Button */}
+        <button onClick={toggleMenu} className="md:hidden text-2xl">
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </button>
+
+        {/* Desktop & Mobile Menu */}
+        <ul className={`flex-col md:flex-row md:flex gap-6 text-sm absolute md:static top-16 left-0 w-full md:w-auto bg-black/80 md:bg-transparent p-4 md:p-0 transition-all duration-300 ${menuOpen ? "flex" : "hidden"} md:flex`}>
           {sections.map((s) => (
-            <motion.li key={s.id} className="cursor-pointer hover:text-indigo-400" whileHover={{scale:1.1}} onClick={() => scrollToSection(s.id)}>
+            <motion.li key={s.id} className="cursor-pointer hover:text-indigo-400 mb-2 md:mb-0" whileHover={{scale:1.1}} onClick={() => scrollToSection(s.id)}>
               {s.label}
             </motion.li>
           ))}
