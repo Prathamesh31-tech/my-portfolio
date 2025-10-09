@@ -129,7 +129,7 @@ export default function PortfolioWebsite() {
         </motion.p>
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.8}} className="flex gap-4 mt-5">
           <a href="https://www.linkedin.com/in/prathamesh-chaudhari-a3b2492a1" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-500">LinkedIn</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">GitHub</a>
+          <a href="https://github.com/Prathamesh31-tech" target="_blank" rel="noopener noreferrer" className="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600">GitHub</a>
           <a href="mailto:prchaudhari3172@gmail.com" className="bg-green-600 px-4 py-2 rounded-lg hover:bg-green-500">Email</a>
         </motion.div>
       </section>
@@ -153,9 +153,8 @@ export default function PortfolioWebsite() {
       <section id="achievements" className="py-20 px-6 bg-white/5">
         <h2 className="text-3xl font-bold text-center mb-10">Achievements</h2>
         <ul className="max-w-3xl mx-auto space-y-4 text-center">
-          <li><a href="#" className="hover:text-indigo-400 underline">🏆 Smart India Hackathon Finalist 2025</a></li>
-          <li><a href="#" className="hover:text-indigo-400 underline">🚀 Built automated crime reporting system</a></li>
-          <li><a href="#" className="hover:text-indigo-400 underline">💼 Internship at XYZ Company</a></li>
+          <li><a href="#" className="hover:text-indigo-400 underline">Participated in Rackathon , a National-Level Hackathon at GH Raisoni University , Amravati</a></li>
+          <li><a href="#" className="hover:text-indigo-400 underline">Secure 3rd rank in Electrons 2024 Organized by GHRUA</a></li>
         </ul>
       </section>
 
@@ -163,7 +162,7 @@ export default function PortfolioWebsite() {
         <h2 className="text-3xl font-bold text-center mb-10">Certifications</h2>
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
           {["Full Stack Web Development - Apna College", "Rackathon 2024 Participation - GH Raisoni", "Rackathon 2025 Participation - GH Raisoni"].map((c) => (
-            <motion.a key={c} href="#" target="_blank" whileHover={{scale:1.05}} className="bg-white/5 p-4 rounded-lg shadow-lg text-center hover:bg-white/10 transition">
+            <motion.a key={c} href="https://drive.google.com/drive/folders/1eNGV9IcLZe7b7sNWDGTpT3R4BQyNjKQB?usp=drive_link" target="_blank" whileHover={{scale:1.05}} className="bg-white/5 p-4 rounded-lg shadow-lg text-center hover:bg-white/10 transition">
               <h3 className="font-semibold text-lg mb-2">{c}</h3>
               <p className="text-slate-300 text-sm">Click to view certificate</p>
             </motion.a>
@@ -193,7 +192,7 @@ export default function PortfolioWebsite() {
         <h2 className="text-3xl font-bold text-center mb-10">Resume</h2>
         <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1}} className="max-w-lg mx-auto text-center">
           <p className="text-slate-300 mb-4">Click below to view my resume:</p>
-          <a href="/mnt/data/Resume PRC.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition-all duration-300">View Resume</a>
+          <a href="https://drive.google.com/file/d/1goTUzhqEQRJFA5LUpMQVONUIk_rVojzN/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition-all duration-300">View Resume</a>
         </motion.div>
       </section>
 
