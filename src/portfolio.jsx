@@ -100,7 +100,7 @@ export default function PortfolioWebsite() {
           className="w-44 h-44 rounded-full mb-4 border-4 border-indigo-500 shadow-2xl cursor-pointer"
         >
           <motion.img 
-            src="/p.jpg" 
+            src="/R.jpg" 
             alt="Profile" 
             className="w-full h-full rounded-full object-cover" 
             initial={{scale:0.8,opacity:0}} 
