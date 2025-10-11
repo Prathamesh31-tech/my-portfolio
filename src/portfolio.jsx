@@ -198,7 +198,7 @@ const sections = [
           transition={{ duration: 1 }}
           className="text-center md:text-left max-w-lg"
         >
-          <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-500">
+          <h2 className="text-xl md:text-3xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-500">
             Prathamesh Rajiv Chaudhari
           </h2>
           <p className="mt-4 text-slate-300">
