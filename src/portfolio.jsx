@@ -41,11 +41,16 @@ const sections = [
   { id: "contact", label: "Contact" }
 ];
 
-
   const handleBackClick = () => {
-    setSelectedProject(null);
-    setSelectedDetail(null);
+    if (selectedDetail) {
+      setSelectedDetail(null);
+      setTimeout(() => scrollToSection("achievements"), 100); // ✅ Scroll back to achievements
+    } else if (selectedProject) {
+      setSelectedProject(null);
+      setTimeout(() => scrollToSection("projects"), 100); // ✅ Scroll back to projects
+    }
   };
+
 
   // ✅ DETAIL COMPONENT VIEW
   if (selectedProject || selectedDetail) {
@@ -68,18 +73,74 @@ const sections = [
           {selectedProject === "crime" && (
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Smart Crime Prediction & Heatmap Platform
+                Smart Crime Reporting and Prediction System Using Map Visualization
+
               </h2>
               <p className="text-slate-300 mb-3">
-                This project is a complete web-based platform to report, classify,
-                and predict crime incidents using machine learning and geospatial
-                visualization.
+                A powerful web-based platform designed to make 
+                crime reporting, analysis, and prediction smarter 
+                and more accessible. The system integrates real-time 
+                crime data, AI-based classification, and map visualization
+                 to identify hotspots, crime chains, and patterns across 
+                 Maharashtra. Users can report incidents, while the backend 
+                 
+                 verifies and classifies data automatically using ML models. 
+                 It fetches verified crime news through NewsAPI, GNews, and 
+                 Google RSS, extracts city locations, and visualizes crime 
+                 trends on an interactive map.
               </p>
-              <ul className="list-disc ml-5 text-slate-300 mb-3">
-                <li>Built with ReactJS, Node.js, Express, MongoDB, and Python.</li>
-                <li>Geospatial visualization and hotspot prediction.</li>
-                <li>Interactive crime reporting system.</li>
+             
+                 <h3 className="font-bold">Proposed System</h3> <br></br>
+                   <motion.img
+            src="/p_s.png"
+            alt="Profile"
+            className="w-150 h-100  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          /> <br></br>
+           <h3 className="font-bold">Methodology</h3>
+       <ul className="list-disc ml-5 text-slate-300 mb-3">
+               
+                <li>Data Collection: News API, GNews, Google RSS, User inputs</li>
+                <li>Preprocessing: Text cleaning, city extraction</li>
+                <li>Classification: ML model for crime detection (label: crime or not)</li>
+                <li>Geocoding: Convert city names into latitude and longitude (lat/lng) for accurate map placement.</li>
+                <li>Storage: MongoDB , label, location</li>
+                 <li>Visualization: Google map with markers, heatmaps, hotspots</li>
               </ul>
+
+
+               <h3 className="font-bold">Modules Description</h3> <br></br>
+                   <motion.img
+            src="/m_d.png"
+            alt="Profile"
+            className="w-150 h-80  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          /> <br></br>
+
+             <h3 className="font-bold">Expected Outcomes</h3>
+       <ul className="list-disc ml-5 text-slate-300 mb-3">
+               
+                <li>A smart, all-in-one system to track and monitor crimes.</li>
+                <li>Correctly identify and locate crime incidents using AI.</li>
+                <li>Show crime locations on a real-time map for both users and police.</li>
+                <li>Detect patterns and similar chains of crimes using AI.</li>
+                <li>Predict future crime hotspots using past and live data.</li>
+                 <li>Help people and police stay informed and take quick action.</li>
+                 <li>Support multiple languages so more people can understand the data easily.</li>
+              </ul>
+
+              <h3 className="font-bold" >Conclusion</h3>
+              <p className="text-slate-300 mb-3">
+                  The Smart Crime Reporting and Prediction System is an AI-powered 
+                  platform that predicts future crime hotspots, links related incidents,
+                  and uses satellite-based analysis for events like fires or riots. All 
+                  data is shown on a live map, making crime reporting, tracking, and 
+                  public safety smarter and faster.
+             </p>
               <a
                 href="#"
                 target="_blank"
@@ -198,11 +259,21 @@ const sections = [
           transition={{ duration: 1 }}
           className="text-center md:text-left max-w-lg"
         >
-          <h2 className="text-xl md:text-3xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-500">
+          <h2 className=" md:text-xl  font-bold ">
+            Hello,I'm
+          </h2>
+          <h2 className="text-2xl md:text-3xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-500">
             Prathamesh Rajiv Chaudhari
           </h2>
+          <h2 className=" md:text-xl  font-bold ">
+            And I'm a <span className=" bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-500">Web Developer</span>
+          </h2>
           <p className="mt-4 text-slate-300">
-            Dedicated Full Stack Developer passionate about building modern web applications.
+
+                A Dedicated Full Stack Developer passionate 
+                about building modern, responsive, and user-friendly
+                web applications, turning ideas into powerful digital
+                solutions with clean code and smart design.
           </p>
           <div className="flex flex-col md:flex-row gap-4 mt-6">
             <a
@@ -241,7 +312,8 @@ const sections = [
             className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
           >
             <h3 className="text-xl font-semibold mb-2">
-              Smart Crime Prediction & Heatmap Platform
+              Smart Crime Reporting and Prediction System Using Map Visualization
+
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
