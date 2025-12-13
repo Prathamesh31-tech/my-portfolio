@@ -145,11 +145,22 @@ const sections = [
                 href="#"
                 target="_blank"
                 className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Github 
+              </a>
+                <a
+                href="https://crime-zone.onrender.com"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
               >
                 View Demo
               </a>
             </div>
           )}
+
+
+
           {selectedProject === "farmer" && (
             <div>
               <h2 className="text-3xl font-bold mb-4">
@@ -174,6 +185,36 @@ const sections = [
               </a>
             </div>
           )}
+
+
+
+          {selectedProject === "zerodha" && (
+            <div>
+              <h2 className="text-3xl font-bold mb-4">
+                Zerodha Clone
+              </h2>
+              <p className="text-slate-300 mb-3">
+                  Zerodha 
+              </p>
+              <ul className="list-disc ml-5 text-slate-300 mb-3">
+                <li>MERN stack application.</li>
+                <li>Integrated trading details.</li>
+                <li>Responsive and user-friendly interface.</li>
+              </ul>
+              <a
+                href="#"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+              >
+                View Demo
+              </a>
+            </div>
+          )}
+
+
+
+
+
 
           {/* ================== ACHIEVEMENT / CERTIFICATION / QUALIFICATION DETAIL =================== */}
           {selectedDetail && (
@@ -302,6 +343,9 @@ const sections = [
         </motion.div>
       </section>
 
+
+
+
       {/* ================== PROJECTS ================== */}
       <section id="projects" className="py-20 px-6">
         <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
@@ -317,6 +361,7 @@ const sections = [
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
+
           <motion.div
             onClick={() => setSelectedProject("farmer")}
             whileHover={{ scale: 1.05, rotateY: 5 }}
@@ -327,6 +372,35 @@ const sections = [
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
+
+
+          <motion.div
+            onClick={() => setSelectedProject("zerodha")}
+            whileHover={{ scale: 1.05, rotateY: 5 }}
+            className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
+          >
+            <h3 className="text-xl font-semibold mb-2">
+              Zerodha the trading Platform
+            </h3>
+            <p className="text-sm text-slate-300">Click to view full details</p>
+          </motion.div>
+
+
+
+          
+          <motion.div
+            onClick={() => setSelectedProject("")}
+            whileHover={{ scale: 1.05, rotateY: 5 }}
+            className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
+          >
+            <h3 className="text-xl font-semibold mb-2">
+              
+            </h3>
+            <p className="text-sm text-slate-300">Click to view full details</p>
+          </motion.div>
+
+
+
         </div>
       </section>
 
