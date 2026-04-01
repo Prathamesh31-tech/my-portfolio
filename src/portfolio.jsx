@@ -38,7 +38,6 @@ const sections = [
   { id: "certifications", label: "Certifications" },
   { id: "qualification", label: "Qualification" },
   { id: "resume", label: "Resume" },
-  { id: "contact", label: "Contact" }
 ];
 
   const handleBackClick = () => {
@@ -142,7 +141,7 @@ const sections = [
                   public safety smarter and faster.
              </p>
               <a
-                href="#"
+                href="https://github.com/Prathamesh31-tech/Crime_Hotspot_2.0.git"
                 target="_blank"
                 className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
                 style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
@@ -164,20 +163,105 @@ const sections = [
           {selectedProject === "farmer" && (
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Direct Market Access App for Farmers
+                Trading Platform (MERN Stack)
               </h2>
               <p className="text-slate-300 mb-3">
-                A MERN platform that provides farmers with real-time market prices
-                and weather updates, enabling direct interaction between farmers
-                and buyers.
-              </p>
-              <ul className="list-disc ml-5 text-slate-300 mb-3">
-                <li>MERN stack application.</li>
-                <li>Integrated weather and market price APIs.</li>
-                <li>Responsive and user-friendly interface.</li>
-              </ul>
+                A powerful web-based trading platform designed to 
+                provide users with a seamless and interactive experience 
+                for managing trades, monitoring data, and analyzing performance. 
+                The system is built using the MERN stack and focuses on secure
+                 authentication, efficient data handling, and a responsive 
+                 dashboard. It demonstrates full-stack development skills by
+                  integrating frontend UI, backend APIs, and database management 
+                  into a single scalable application.
+              </p> <br />
+              <h3 className="font-bold">Proposed System</h3>
+               <p>A complete full-stack trading system that 
+                allows users to interact with a modern dashboard, 
+                manage trading-related data, and experience a
+                 real-world application structure with secure 
+                 authentication and smooth UI</p> <br /> <br />
+
+                <motion.img
+            src="/img4.png"
+            alt="Profile"
+            className="w-150 h-100  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          /> <br></br>
+
+          <h3>Methodology</h3>
+           <ul  className="list-disc ml-5 text-slate-300 mb-3">
+            <li>User Interaction: Users access the platform through a responsive React-based UI</li>
+            <li>API Handling: Backend APIs built with Express.js to handle requests</li>
+            <li>Data Processing: Server processes trading-related data efficiently</li>
+            <li>Database Management: MongoDB used to store user and system data</li>
+            <li>Integration: Frontend and backend connected through REST APIs</li>
+           </ul>
+              <br /> 
+              <h3>Modules Description</h3>
+                  <ul  className="list-disc ml-5 text-slate-300 mb-3">
+            <li>User Module: Handles registration, login, and authentication</li>
+            <li>Dashboard Module: Displays trading interface and user data</li>
+            <li>API Module: Manages communication between frontend and backend</li>
+            <li>Database Module: Stores user data and application information securely</li>
+           </ul>
+            <br />
+
+                <motion.img
+            src="/imh6.png"
+            alt="Profile"
+            className="w-150 h-100  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />   <br />
+
+                 <h3>Expected Outcomes</h3>
+                       <ul  className="list-disc ml-5 text-slate-300 mb-3">
+            <li>A fully functional trading platform with modern UI</li>
+            <li>Secure user authentication and data management</li>
+            <li>Smooth and responsive dashboard experience</li>
+            <li>Efficient backend handling with scalable architecture</li>
+            <li>Real-world implementation of MERN stack development</li>
+            <li>Improved user experience with clean and interactive design</li>
+           </ul> <br />
+
+             <h3>Conclusion</h3>
+             <p>The Trading Platform is a user-friendly web 
+              application that simplifies trading through an 
+              interactive and secure dashboard. It enables users 
+              to efficiently manage and analyze their trading 
+              activities while providing a smooth and scalable 
+              experience.</p>
+            <br />
+               <a
+                href="https://github.com/Prathamesh31-tech/TradingApp.git"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",marginBottom:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Git-front
+              </a>
+                <a
+                href="https://github.com/Prathamesh31-tech/TradingApp_dashboard.git"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Git-dash 
+              </a>
+                   <a
+                href="https://github.com/Prathamesh31-tech/TradingApp_backend.git"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Git-back 
+              </a>
               <a
-                href="#"
+                href="https://trading-app-seven-eta.vercel.app/"
                 target="_blank"
                 className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
               >
@@ -188,21 +272,123 @@ const sections = [
 
 
 
-          {selectedProject === "zerodha" && (
+          {selectedProject === "weather" && (
             <div>
               <h2 className="text-3xl font-bold mb-4">
-                Zerodha Clone
+                WeatherNow – Live Weather Forecast App
               </h2>
               <p className="text-slate-300 mb-3">
-                  Zerodha 
+                  The Weather Application is a responsive web-based 
+                  project that allows users to search for any city and 
+                  instantly view real-time weather information. 
+                  The application fetches live weather data using 
+                  the OpenWeatherMap API and displays temperature, 
+                  weather conditions, humidity, and wind speed in a 
+                  clean and user-friendly interface. <br /> <br />
+                  This project demonstrates my ability to work with REST 
+                  APIs, asynchronous JavaScript, DOM manipulation, 
+                  and modern UI design using HTML, CSS, and JavaScript. 
               </p>
+               <h3 className="font-bold">Key Features</h3>
               <ul className="list-disc ml-5 text-slate-300 mb-3">
-                <li>MERN stack application.</li>
-                <li>Integrated trading details.</li>
-                <li>Responsive and user-friendly interface.</li>
+                <li> Search weather details by city name</li>
+                <li> Displays current temperature in Celsius</li>
+                <li> Shows weather condition with dynamic icons</li>
+                <li> Displays humidity percentage</li>
+                <li> Displays wind speed</li>
+                <li> Handles invalid city names with error messages</li>
+                <li> Fully responsive and clean UI design</li>
               </ul>
+                     <motion.img
+            src="/wea.png"
+            alt="Profile"
+            className="w-150 h-80  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+             
+             <br />
+             <h3  className="font-bold">Technologies Used</h3>
+              <ul className="list-disc ml-5 text-slate-300 mb-3">
+                <li>HTML5 – Structure and layout</li>
+                <li>CSS3 – Styling, responsiveness, and UI design</li>
+                <li>JavaScript (ES6) – Logic, API handling, and DOM manipulation</li>
+                <li>OpenWeatherMap API – Real-time weather data</li>
+                <li>Font Awesome – Weather-related icons</li>
+              </ul>
+
+               <br />
+             <a
+                href="https://github.com/Prathamesh31-tech/weatherApp.git"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Github 
+              </a>
               <a
-                href="#"
+                href="https://prathamesh31-tech.github.io/weatherApp/"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+              >
+                View Demo
+              </a>
+            </div>
+          )}
+
+           {selectedProject === "music" && (
+            <div>
+              <h2 className="text-3xl font-bold mb-4">
+                Khandesh Beats – Music Streaming Web App
+              </h2>
+              <p className="text-slate-300 mb-3">
+                Khandesh Beats is a responsive and interactive 
+                music streaming web application built using HTML,
+                 CSS, and Vanilla JavaScript. The app provides a
+                  smooth audio playback experience with a clean UI 
+                  inspired by modern music players. Users can play, 
+                  pause, switch tracks, and control playback using
+                  an intuitive interface.
+              </p>
+               <h3 className="font-bold">Key Features</h3>
+              <ul className="list-disc ml-5 text-slate-300 mb-3">
+                <li>Dynamic song list rendered using JavaScript</li>
+                <li>Play / Pause individual songs and master controls</li>
+                <li>Next & Previous track navigation</li>
+                <li>Toggle between song list view and player view</li>
+                <li>Fully responsive design for mobile and desktop</li>
+                <li>Audio handled using JavaScript Audio API</li>
+              </ul>
+                     <motion.img
+            src="mua.png"
+            alt="Profile"
+            className="w-150 h-80  "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          />
+             
+             <br />
+             <h3  className="font-bold">Technologies Used</h3>
+              <ul className="list-disc ml-5 text-slate-300 mb-3">
+                <li>HTML5 – Structure & layout</li>
+                <li>CSS3 – Styling, responsiveness & animations</li>
+                <li>JavaScript (ES6) – Audio logic, DOM manipulation</li>
+                <li>Font Awesome – Playback icons</li>
+              </ul>
+
+               <br />
+             <a
+                href="https://github.com/Prathamesh31-tech/music_app.git"
+                target="_blank"
+                className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
+                style={{marginRight:"10px",backgroundColor:"gray" , color:"black"}}
+              >
+                Github 
+              </a>
+              <a
+                href="https://prathamesh31-tech.github.io/music_app/"
                 target="_blank"
                 className="inline-block px-5 py-2 bg-indigo-600 rounded hover:bg-indigo-500"
               >
@@ -245,7 +431,8 @@ const sections = [
         initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="fixed top-0 left-0 w-full bg-black/20 backdrop-blur-lg p-4 flex justify-between items-center z-50 shadow-lg"
+        style={{height:"90px"}}
+        className="fixed top-0 left-0 w-full bg-black/20 backdrop-blur-lg p-4 flex justify-between items-center z-50 shadow-lg  "
       >
         <motion.h1 whileHover={{ scale: 1.05 }} className="text-xl font-bold tracking-wide">
           Prathamesh Portfolio
@@ -263,6 +450,7 @@ const sections = [
           {sections.map((s) => (
             <motion.li
               key={s.id}
+              style={{fontSize:"20px"}}
               className="cursor-pointer hover:text-indigo-400 mb-2 md:mb-0"
               whileHover={{ scale: 1.1 }}
               onClick={() => scrollToSection(s.id)}
@@ -368,19 +556,19 @@ const sections = [
             className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
           >
             <h3 className="text-xl font-semibold mb-2">
-              Direct Market Access App for Farmers
+              Trading Platform
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
 
 
           <motion.div
-            onClick={() => setSelectedProject("zerodha")}
+            onClick={() => setSelectedProject("weather")}
             whileHover={{ scale: 1.05, rotateY: 5 }}
             className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
           >
             <h3 className="text-xl font-semibold mb-2">
-              Zerodha the trading Platform
+              WeatherNow – Live Weather Forecast App
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
@@ -389,12 +577,12 @@ const sections = [
 
           
           <motion.div
-            onClick={() => setSelectedProject("")}
+            onClick={() => setSelectedProject("music")}
             whileHover={{ scale: 1.05, rotateY: 5 }}
             className="cursor-pointer bg-white/5 p-5 rounded-lg shadow-lg border border-white/10 hover:shadow-indigo-500/40 transition"
           >
             <h3 className="text-xl font-semibold mb-2">
-              
+               Khandesh Beats – Music Streaming Web App
             </h3>
             <p className="text-sm text-slate-300">Click to view full details</p>
           </motion.div>
@@ -528,7 +716,7 @@ const sections = [
         >
           <p className="text-slate-300 mb-4">Click below to view my resume:</p>
           <a
-            href="https://drive.google.com/file/d/1goTUzhqEQRJFA5LUpMQVONUIk_rVojzN/view?usp=drive_link"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition-all duration-300"
@@ -538,80 +726,6 @@ const sections = [
         </motion.div>
       </section>
 
-      {/* ================== CONTACT ================== */}
-<section id="contact" className="py-20 px-6 bg-white/5">
-  <h2 className="text-3xl font-bold text-center mb-10">Contact</h2>
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    className="max-w-3xl mx-auto text-center space-y-6"
-  >
-    <p className="text-slate-300">
-      Have a project in mind or just want to say hello? Feel free to reach out!
-    </p>
-
-    <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
-      <a
-        href="mailto:prchaudhari3172@gmail.com"
-        className="bg-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-500 transition-all"
-      >
-        📧 Send Email
-      </a>
-      <a
-        href="https://www.linkedin.com/in/prathamesh-chaudhari-a3b2492a1"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-500 transition-all"
-      >
-        🔗 LinkedIn
-      </a>
-      <a
-        href="https://github.com/Prathamesh31-tech"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600 transition-all"
-      >
-        💻 GitHub
-      </a>
-    </div>
-
-    <form
-      action="https://formspree.io/f/mzzpzbkq"  // ✅ Optional: free email form handler
-      method="POST"
-      className="mt-10 space-y-4 max-w-lg mx-auto"
-    >
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-        className="w-full p-3 rounded bg-black/30 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-        className="w-full p-3 rounded bg-black/30 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-      />
-      <textarea
-        name="message"
-        placeholder="Your Message"
-        rows="4"
-        required
-        className="w-full p-3 rounded bg-black/30 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-      ></textarea>
-      <button
-        type="submit"
-        className="w-full bg-indigo-600 py-3 rounded-lg hover:bg-indigo-500 transition-all"
-      >
-        ✨ Send Message
-      </button>
-    </form>
-  </motion.div>
-</section>
-
 
       {/* ================== FOOTER ================== */}
       <motion.footer
@@ -620,7 +734,7 @@ const sections = [
         transition={{ delay: 0.3 }}
         className="py-6 text-center text-slate-400 bg-black/20"
       >
-        © {new Date().getFullYear()} Prathamesh Portfolio | Built with React, Tailwind & Framer Motion ✨
+        © {new Date().getFullYear()} ✨
       </motion.footer>
     </div>
   );
